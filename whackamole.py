@@ -1,11 +1,8 @@
 import pygame
 import random
-
-
 def main():
     try:
         pygame.init()
-        # You can draw the mole with this snippet:
         mole_image = pygame.image.load("mole.png")
         screen = pygame.display.set_mode((640, 512))
         mole_pos = (16,16)
@@ -46,7 +43,6 @@ def main():
             clock.tick(60)
     finally:
         pygame.quit()
-
 
 if __name__ == "__main__":
     main()
